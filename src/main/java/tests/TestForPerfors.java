@@ -33,8 +33,8 @@ public static void runFirstTest()  throws IOException {
 
         List<WebElement> listings = driver.findElements(By.xpath("//h4[@class='s_title']"));
         Random random = new Random();
-        int randomValue = random.nextInt(listings.size()); //Getting a random value that is between 0 and (list's size)-1
-        listings.get(randomValue).click(); //Clicking on the random item in the list.
+        int randomValue = random.nextInt(listings.size());
+        listings.get(randomValue).click();
 
             if (driver.findElements(By.xpath("//span[@class='item_old_price old-price']")).isEmpty()){
             System.out.println("This item has discount!");
