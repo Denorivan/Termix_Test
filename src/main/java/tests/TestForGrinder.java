@@ -31,7 +31,7 @@ public class TestForGrinder {
 
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Enter the number of test repetitions required: ");
+        System.out.println("Enter how many pages do you want to check: ");
         int size = Integer.parseInt(reader.readLine());
 
         for (int i = 0; i < size; i++) {
